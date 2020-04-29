@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div th:text="'¡Hola,' + ${name}">
+
+
+<table>
+		<th:block  th:each= " per: ${personas} ">
+			<tr>
+				<td  th:text= " ${per.id}"></td >
+				<td  th:text= " ${per.nombre}"></td >
+			</tr>
+		</th:block>
+	</table>
+
+
+</div>
+</body>
+</html>
